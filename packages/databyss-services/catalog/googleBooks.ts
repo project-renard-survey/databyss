@@ -3,15 +3,11 @@ import {
   CatalogType,
   GroupedCatalogResults,
 } from '../interfaces'
-import {
-  findPublicationMonthOption,
-  getPublicationTypeById,
-  isBook,
-  normalizePublicationId,
-} from '../sources/lib'
 import { defaultMonthOption } from '../sources/constants/MonthOptions'
 import { defaultPublicationType } from '../sources/constants/PublicationTypes'
+import { getPublicationTypeById, normalizePublicationId } from '../sources/lib'
 import request from '../lib/request'
+
 import { GOOGLE_BOOKS } from './constants'
 import { stripText as c } from './util'
 
